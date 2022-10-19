@@ -1,1 +1,12 @@
 Create IIT CA End User-1.3 Compatible CACertificates.p7b
+
+$ ./create_pkcs7.py c CATest.p7b test_certs/*.crt
+
+Extract
+
+$ ./create_pkcs7.py x CATest.p7b
+
+Test
+
+$ ./create_pkcs7.py t CATest.p7b
+
